@@ -8,6 +8,7 @@
 - Footer Added
 > Authentication Flow, Manage Data, 
 - 1st Feature - Login, Signup, Logout - Integrate 3 Apis
+- Create a Login Page
 
 
 # Body
