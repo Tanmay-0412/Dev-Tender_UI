@@ -9,6 +9,11 @@
 > Authentication Flow, Manage Data, 
 - 1st Feature - Login, Signup, Logout - Integrate 3 Apis
 - Create a Login Page
+- Axois, Add cors middleware with configuration 
+- origin & credentials
+- In Api calling pass {withCeredentials : true } -- to set Cookie in Application 
+- Install the Redux toolkit, react-redux
+- configureStore => Provider => createSlice => add Reducer to store, 
 
 
 # Body
@@ -17,3 +22,4 @@
 > Route /login => Login
 > Route /connections => Connection
 > Route /profile => Profile 
+
