@@ -1,15 +1,21 @@
 // rafce - react Arrow Functional Export Component
 // type : module (import, export)   -- commonjs (require) 
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const user = useSelector((store) => store.user)
+  console.log(user)
   return (
     <div className="navbar bg-base-200 shadow-sm">
       <div className="flex-1">
         <a className="btn btn-ghost text-xl">Dev Tinder 👩🏻‍💻</a>
       </div>
       <div className="flex gap-2">
+        { user ? 
+        
         <div className="dropdown dropdown-end mx-5">
+          <span>Welcome, {user.firstName}</span>
           <div
             tabIndex={0}
             role="button"
@@ -17,8 +23,9 @@ const Navbar = () => {
           >
             <div className="w-10 rounded-full">
               <img
-                alt="Tailwind CSS Navbar component"
-                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                alt="Img"
+                // src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                src={user.photoUrl}
               />
             </div>
           </div>
@@ -37,9 +44,9 @@ const Navbar = () => {
             </li>
             <li>
               <a>Logout</a>
-            </li>
+            </li> 
           </ul>
-        </div>
+        </div> : <div></div> }
       </div>
     </div>
   );

@@ -13,7 +13,9 @@
 - origin & credentials
 - In Api calling pass {withCeredentials : true } -- to set Cookie in Application 
 - Install the Redux toolkit, react-redux
-- configureStore => Provider => createSlice => add Reducer to store, 
+- configureStore => Provider => createSlice => add Reducer to store
+- Add redux devtools, Navbar should update/refresh when login
+- Add BASE_URL in constants
 
 
 # Body
