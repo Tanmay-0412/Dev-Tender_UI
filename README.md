@@ -16,6 +16,9 @@
 - configureStore => Provider => createSlice => add Reducer to store
 - Add redux devtools, Navbar should update/refresh when login
 - Add BASE_URL in constants
+- You should not be access other routes without login 
+- If token is not present, redirect user to login page
+- Logout feature,Error messages - validations, profile page
 
 
 # Body
