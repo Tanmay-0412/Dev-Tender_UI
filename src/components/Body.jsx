@@ -11,18 +11,18 @@ const Body = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const userData = useSelector(store => store.user)
-  console.log(userData)
+  // console.log(userData)
   
   const fetchUser = async()=>{ 
     if(userData) return; 
     try {
-      const res = await axios .get(`${BASE_URL}/profile/view`,
+      const res = await axios.get(`${BASE_URL}/profile/view`,
       {withCredentials : true}
     )
-    console.log(res)
+    // console.log(res)
     dispatch(addUser(res.data))
     }catch(err){
-      console.log(err.response)
+      // console.log(err.response)
       if(err.status === 401){
         navigate('/login')
       }
