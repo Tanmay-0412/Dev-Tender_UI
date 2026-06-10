@@ -19,7 +19,7 @@ const Login = () => {
       }, 
       {withCredentials:true}
     )  
-      console.log(res?.data?.data)
+      // console.log(res?.data?.data)
       dispatch(addUser(res?.data?.data))
       navigate('/')
     }catch(err){
@@ -41,7 +41,7 @@ const Login = () => {
       <label className="label">Password </label>
       <input type="password" className="input" placeholder="Password" value={password} onChange={(e)=> setPassword(e.target.value)}/>
       <p className="text-red-500">{error}</p>
-      <button className="btn btn-neutral mt-4" onClick={()=> handleLogin()}>Login</button>
+      <button className="btn btn-success mt-4" onClick={()=> handleLogin()}>Login</button>
     </fieldset>
   </div>
   );
