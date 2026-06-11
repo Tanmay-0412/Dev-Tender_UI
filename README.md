@@ -19,6 +19,8 @@
 - You should not be access other routes without login 
 - If token is not present, redirect user to login page
 - Logout feature,Error messages - validations, profile page
+- Edit Profile Page, Show Toast
+- See all my connections - user/connections
 
 
 # Body

@@ -85,7 +85,7 @@ const EditProfile = ({user}) => {
     <input type="text" className="input" placeholder="last name" value={lastName} onChange={(e)=> setLastName(e.target.value)}/>
 
     <label className="label">Age</label>
-    <input type="text" className="input" placeholder="last name" value={age} onChange={(e)=> setAge(e.target.value)}/>
+    <input type="text" className="input" placeholder="age" value={age} onChange={(e)=> setAge(e.target.value)}/>
 
     <label className="label" value={gender} onChange={(e)=> setGender(e.target.value)}>Gender</label>
     <select defaultValue="Select Gender" className="select">

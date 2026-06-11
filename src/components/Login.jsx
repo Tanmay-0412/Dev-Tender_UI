@@ -31,9 +31,9 @@ const Login = () => {
   }
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center items-center mt-5">
     <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs  border p-4">
-      <legend className="fieldset-legend bold text-2xl text-center">Login</legend>
+      <h2 className="bold text-2xl text-center mt-2">Login</h2>
 
       <label className="label">Email </label>
       <input type="email" className="input" placeholder="Email" value={emailId}  onChange={(e)=> setEmailId(e.target.value)} />
